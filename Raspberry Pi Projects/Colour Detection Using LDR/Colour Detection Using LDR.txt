@@ -1,0 +1,36 @@
+
+from machine import Pin
+import time
+photo_pin = machine.ADC(26)
+
+red=Pin(13,Pin.OUT)
+green=Pin(12,Pin.OUT)
+blue=Pin(11,Pin.OUT)
+
+  
+while True:
+    val = photo_pin.read_u16()
+    print(val)
+    time.sleep(.2)
+    
+    
+    if val in range(13000,18000):
+        print("red")
+        red.value(1)
+        green.value(0)
+        blue.value(0)
+        
+        
+    if val in range(8000,11500):
+        print("blue")
+        red.value(0)
+        green.value(0)
+        blue.value(1)
+        
+    if val in range(5000,7000):
+        print("green")
+        red.value(0)
+        green.value(1)
+        blue.value(0)
+    
+    
