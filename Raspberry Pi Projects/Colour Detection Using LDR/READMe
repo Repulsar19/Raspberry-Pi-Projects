@@ -1,3 +1,5 @@
-In this project, three coloured lights (RED,GREEN and BLUE) is going to be detected by a LDR on basis of amount of light emmited by a common cathode RGB LED , by using a Raspberry Pi pico
+In this project, three coloured lights (RED,GREEN and BLUE) is going to be detected by a LDR on basis of amount of light emmited by a common cathode RGB LED ,
+by using a Raspberry Pi pico
 
 
+This project is created as a simple programs for beginers to understand the colour detection concept via se of LDR 
